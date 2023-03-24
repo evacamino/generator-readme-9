@@ -20,35 +20,26 @@ const questions = [
   {
     type: "input",
     name: "description",
-    message: "Type out description"
+    message: "Type out description",
   },
   {
     type: "input",
     name: "installation",
-    message: "Which command to run to install the dependancies?"
-
+    message: "Which command to run to install the dependancies?",
   },
 
-
-  {type: "input",
-  name: "usage",
-  messagee: ""
+  { type: "input", name: "usage", messagee: "" },
+  { type: "input", name: "contributing", message: "" },
+  {
+    type: "input",
+    name: "tests",
+    message: "Which command should run test?",
   },
-  {type: "input",
-name: "contributing",
-message: "",
+  {
+    type: "input",
+    name: "features",
+    message: "What features?",
   },
-{
-  type: "input",
-  name: "tests",
-  message: "Which command should run test?"
-},
-{
-  type: "input",
-  name: "features",
-  message: "What features?"
-}
-
 ];
 //type: input or list: choices will be an arry
 //name : answers.name ex answer.license
@@ -61,13 +52,13 @@ message: "",
 //   return fs.writeFileSync
 // }
 
-
 // TODO: Create a function to initialize app
 async function init() {
   try {
+    //this functionionality will be seen on this link
     const answers = await inquirer.prompt(questions);
     console.log(answers);
-    generateMarkdown(answers)
+    generateMarkdown(answers);
     writeFileSync("README.md", render(answers));
   } catch (error) {
     console.log(error);
