@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
+
 const inquirer = require("inquirer");
 const fs = require("fs");
 const { writeFileSync } = fs;
 const render = require("./utils/generateMarkdown");
 const generateMarkdown = require("./utils/generateMarkdown");
-// TODO: Create an array of questions for user input
+
 const questions = [
   {
     type: "input",
@@ -41,21 +41,9 @@ const questions = [
     message: "What features?",
   },
 ];
-//type: input or list: choices will be an arry
-//name : answers.name ex answer.license
-//return callbck function
-// title, Description, Installation, Usage, Contributing, and Tests
-//username, github email, repo link url
-
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//   return fs.writeFileSync
-// }
-
-// TODO: Create a function to initialize app
+\
 async function init() {
   try {
-    //this functionionality will be seen on this link
     const answers = await inquirer.prompt(questions);
     console.log(answers);
     generateMarkdown(answers);
@@ -65,5 +53,5 @@ async function init() {
   }
 }
 
-// Function call to initialize app
+
 init();
