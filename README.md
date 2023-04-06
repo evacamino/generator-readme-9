@@ -1,8 +1,8 @@
-# s
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# ReadMe Generator
+[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)
 
 ## Description
-f
+This code generates Readme for codes in vscode.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -10,11 +10,11 @@ f
 - [Credits](#credits)
 - [License](#license)
 ## Installation
-f
+Npm install
 
 
 ## Usage
-f
+javscript
 
 
 ## Credits
@@ -28,10 +28,10 @@ undefined
 ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
 
 ## Features
-undefined
+Na
 
 
 ## How to Contribute
-f
+NA
 ## Tests
-undefined
+git bash, powershell

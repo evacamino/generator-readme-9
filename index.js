@@ -41,7 +41,7 @@ const questions = [
     message: "What features?",
   },
 ];
-\
+
 async function init() {
   try {
     const answers = await inquirer.prompt(questions);
